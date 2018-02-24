@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import Logo from '../images/hyve-logo.png';
 
 const Header = styled.header`
   position: fixed;
@@ -41,7 +42,7 @@ const NavList = styled.ul`
 
   @media (min-width: 480px) {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     max-height: 1000px;
   }
 `;
@@ -62,7 +63,7 @@ const NavItem = styled.li`
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: color .25s ease-in-out;
 
     &:hover {
@@ -71,20 +72,30 @@ const NavItem = styled.li`
   }
 `;
 
+const Image = styled.img`
+  display: flex;
+  width: 70px;
+`;
+
 const Navbar = () => (
   <Header>
     <NavWrapper>
       <NavList>
+
         <NavItem>
           <a href="/">Home</a>
         </NavItem>
 
         <NavItem>
-          <a href="/about">About</a>
+          <a href="/idea">Idea</a>
         </NavItem>
 
         <NavItem>
-          <a href="/contact">Contact</a>
+          <a href="/team">Team</a>
+        </NavItem>
+
+        <NavItem>
+          <a href="/news">News</a>
         </NavItem>
       </NavList>
     </NavWrapper>
