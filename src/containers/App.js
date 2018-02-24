@@ -1,10 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import Homepage from '../components/Homepage';
 
 const App = () => (
   <div>
-    <header>
-      <h1>Welcome to React</h1>
-    </header>
+    <Navbar />
+    <Homepage />
   </div>
 );
 
