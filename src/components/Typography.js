@@ -28,16 +28,16 @@ export const Heading = styled.h1`
 export const Subheading = styled.h2`
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: normal;
   color: white;
 
   @media (min-width: 480px) {
-    font-size: 36px;
+    font-size: 16px;
   }
 
   @media (min-width: 768px) {
-    font-size: 48px;
+    font-size: 20px;
   }
 
   // Styles for handling spacing between typography elements

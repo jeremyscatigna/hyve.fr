@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 // Import Container component
 import Button from './../components/Button';
@@ -8,7 +7,7 @@ import Container from './../components/Container';
 import Section from './../components/Section';
 
 // Import Typography components
-import { Heading, Subheading } from './../components/Typography';
+import { Heading } from './../components/Typography';
 
 const HomeWrapper = styled(Section)`
   background-image: url(https://source.unsplash.com/qMFSP1xYVTQ/480x800);
@@ -47,9 +46,13 @@ const HomeWrapper = styled(Section)`
     position: relative;
     z-index: 2;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
-  ${Subheading} {
+  ${Heading} {
     margin-bottom: 32px;
   }
 `;
@@ -61,7 +64,6 @@ const Homepage = () => (
   <HomeWrapper centered>
     <Container>
       <Heading>Emotions in the palm of your hand</Heading>
-
       <HomeButton href="http://tickets.hyvegroup.com">Buy Tickets</HomeButton>
     </Container>
   </HomeWrapper>

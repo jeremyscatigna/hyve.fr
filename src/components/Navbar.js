@@ -72,11 +72,6 @@ const NavItem = styled.li`
   }
 `;
 
-const Image = styled.img`
-  display: flex;
-  width: 70px;
-`;
-
 const Navbar = () => (
   <Header>
     <NavWrapper>
