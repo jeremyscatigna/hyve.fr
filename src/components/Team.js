@@ -29,8 +29,8 @@ const ImageContainer = styled.div`
 
 const Team = () => (
   <TeamWrapper centered>
+    <Heading>Meet the team</Heading>
     <Container>
-      <Heading>Meet the team</Heading>
       <ImageContainer>
         <BubbleImage src={Me} alt="Me" />
         <Text>CTO</Text>
